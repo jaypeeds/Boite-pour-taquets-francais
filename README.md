@@ -55,7 +55,7 @@ En suivant les même étapes, on obtient le résultat sauvegardé dans le projet
 # Export en SVG
 Dans l'onglet Model, on sélection les *_tab, et on clique sur la dernière icône du menu spécifique de "Laser Cut Interlocking", **Export**, on choisit comme format "Flattened SVG", et on obtient le plan de découpe.
 
-
+![image](https://github.com/TeamRepairCafeNice/Boite-pour-taquets-francais/assets/72799037/4de3ce1b-a1ab-4aa9-929a-2e071f962350)
 
 
 
