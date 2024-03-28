@@ -1,7 +1,7 @@
 # Boîte pour taquets francais
 Design avec FreeCAD de boîtes à queue droite, adaptable sur des rails en CP de 18mm d'épaisseur, de 30mm à l'arrière et 48mm de hauteur à l'avant.
 
-<img src="/boite-assemblée.png" width="200" height="200" alt="boite-assemblée">
+<img width="200" alt="image" src="https://github.com/TeamRepairCafeNice/Boite-pour-taquets-francais/assets/72799037/93402a38-45ab-4d43-832a-e1cead821e37">
 
 Dans FreeCAD, les activités se font dans des ateliers spécialisés, sélectionnables par le menu juste après les 3 icônes "Nouveau', "Ouvrir", "Sauver". Quatre d'entre eux seront utilisés dans la suite :
 - Spreadsheet
