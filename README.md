@@ -1,7 +1,7 @@
-# boite-taquets-francais
+# Boîte pour taquets francais
 Design avec FreeCAD de boîtes à queue droite, adaptable sur des rails en CP de 18mm d'épaisseur, de 30mm à l'arrière et 48mm de hauteur à l'avant.
 
-![La boîte assemblée](boite-assemblée.png) "Boîte assemblée"
+![La boîte assemblée](./boite-assemblée.png) "Boîte assemblée"
 
 
 Dans FreeCAD, les activités se font dans des ateliers spécialisés, sélectionnables par le menu juste après les 3 icônes "Nouveau', "Ouvrir", "Sauver". Quatre d'entre eux seront utilisés dans la suite :
@@ -12,7 +12,7 @@ Dans FreeCAD, les activités se font dans des ateliers spécialisés, sélection
 
 # Comment l'adapter à d'autres valeurs ?
 
-Partir du projet **Boite Taquets Fr V3.FCStd**
+Ouvrir le projet **Boite Taquets Fr V3.FCStd**
 
 Dans FreeCAD, le design est paramétré grâce à une feuille de calcul ici nommée **dimensions**
 Dans cette feuille de calcul, les cellules surlignées en jaune sont associées avec un **alias**, qui sert de référence à cette valeur, la syntaxe d'une référence est \<\<nom de la feuille de calcul\>\>.alias, par exemple \<\<dimensions\>\>.longueur.
