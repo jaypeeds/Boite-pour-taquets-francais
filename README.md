@@ -12,7 +12,7 @@ Dans FreeCAD, les activités se font dans des ateliers spécialisés, sélection
 Partir du projet **Boite Taquets Fr V3.FCStd**
 
 Dans FreeCAD, le design est paramétré grâce à une feuille de calcul ici nommée **dimensions**
-Dans cette feuille de calcul, les cellules surlignées en jaune sont associées avec un **alias**, qui sert de référence à cette valeur, la syntaxe d'une référence est <<nom de la feuille de calcul>>.alias, par exemple <<dimensions>>.longueur.
+Dans cette feuille de calcul, les cellules surlignées en jaune sont associées avec un **alias**, qui sert de référence à cette valeur, la syntaxe d'une référence est \<\<nom de la feuille de calcul\>\>.alias, par exemple \<\<dimensions\>\>.longueur.
 
 Les dimensions sont celles de l'espace utile à l'intérieur de la boîte, les épaisseurs sont comptées en plus, vers l'extérieur.
 Dans la vue du modèle, et de l'arbre de construction, il y a également le panneau inférieur, regroupant les valeurs numériques.
