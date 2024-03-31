@@ -29,7 +29,7 @@ Dans cette feuille de calcul, les cellules surlignées en jaune sont associées 
 > [!NOTE]  
 > Au cours du projet, il est parfois nécessaire d'alterner entre une utilisation précise de la souris pour dessiner, et le déplacement dans l'espace pour visualiser le modèle. En cliquant dans la barre de statut en bas le la fenètre de l'application, on peut changer ce mode, de : **CAD**, mode précis, à : **Gesture**, mode libre de navigation dans l'espace. Certaines commandes de dessins ne répondent pas dans un autre mode que CAD. 
 
-3. Une exigence pour l'utilisation ultérieure du greffon "LC Interlocking" est que chaque panneau de la boîte soit défini comme un **corps** séparé dans l'atelier **Part Design**. On ne détaillera pas les opérations de desin de la boîte. Lorsque les 5 corps sont prêts, il faut changer d'atelier pour **Part**, et il faut une transformation supplémentaire pour l'utilisation du greffon : On sélectionne les 5 corps, puis dans le menu "Part", sélectionner **Part > Créer une copie > Créer une copie simple** . On peut ensuite cacher les 5 corps originaux.
+3. Une exigence pour l'utilisation ultérieure du greffon "LC Interlocking" est que chaque panneau de la boîte soit défini comme un **corps** séparé dans l'atelier **Part Design**. On ne détaillera pas les opérations de desin de la boîte. Lorsque les cinq corps sont prêts, il faut changer d'atelier pour **Part**, et une transformation supplémentaire est nécessaire pour l'utilisation du greffon : On sélectionne les cinq corps, puis dans le menu "Part", sélectionner **Part > Créer une copie > Créer une copie simple** . On peut ensuite cacher les cinq corps originaux.
 
 > [!CAUTION] 
 > Il ne faut pas les supprimer de l'arbre de construction, il faut seulement changer leur visibilité.
@@ -42,16 +42,16 @@ Dans cette étape, on fera de nombreux aller-retours entre l'onglet **Model**, e
 Pour définir un assemblage, il faut selectionner toutes les copies simples des corps concernés par cet assemblage. 
 
 Commençons par le fond, toutes les 5 copies sont concernées, on les sélectionne toutes.
-1. On change pour l'onglet **Tasks**, on clique sur "Add same Parts", puis en déroulant le formulaire, vers le bas, on définit la tolérance d'assemblage 0,5mm par défaut mais qui peut s'affiner à 0,2mm, de même que la taille du faisceau Laser, ce sont des ajustements à trouver par l'expérience.
-2. On change pour l'onglet **Model**, pour sélectionner tous les bords de panneaux qui vont être rallongés pour recevoir les queues droites. Pour cela on cache les corps qui recevront les encoches, l'avant, l'arrière et les deux flancs, en sélectionnant la copie du corps puis en appuyant sur la barre d'espace.
+1. On change pour l'onglet **Tâches**, on clique sur "Add same Parts", puis en déroulant le formulaire, vers le bas, on définit la tolérance d'assemblage 0,5mm par défaut mais qui peut s'affiner à 0,2mm, de même que la taille du faisceau Laser, ce sont des ajustements à trouver par l'expérience.
+2. On change pour l'onglet **Modèle**, pour sélectionner tous les bords de panneaux qui vont être rallongés pour recevoir les queues droites. Pour cela on cache les corps qui recevront les encoches, l'avant, l'arrière et les deux flancs, en sélectionnant la copie du corps puis en appuyant sur la barre d'espace.
 3. Avec la souris en mode CAD, on sélectionne les faces des bords avant et droit (Ctrl-Clic/Commande-Clic selon la machine). En mode Gesture on tourne la copie du fond pour exposer les deux autres faces, et compléter la sélection des quatre facettes des bords de la copie du fond en mode CAD.
-4. On change pour l'onglet **Tasks**, on clique sur "Add same faces", puis en déroulant la formulaire vers le bas, on définit le nombre de queues droites sur les arêtes sélectionnées, 3 est un bon chiffre pour commencer. Si la découpe se fait au Laser, on peut décocher "Dog bones", qui sont utiles uniquement pour une fraiseuse CNC.
+4. On change pour l'onglet **Tâches**, on clique sur "Add same faces", puis en déroulant la formulaire vers le bas, on définit le nombre de queues droites sur les arêtes sélectionnées, 3 est un bon chiffre pour commencer. Si la découpe se fait au Laser, on peut décocher "Dog bones", qui sont utiles uniquement pour une fraiseuse CNC.
 On clique sur "Preview" pour éxécuter la construction. De nouveaux corps avec le suffix _tab dans le nom sont crées.
 
 Pour continuer et finir, on va travailler avec les 4 copies des faces avant-arrière, droite et gauche.
-On cache les panneaux droit et gauche, on sélectionne les faces à l'extrémité des panneau avant et arrière, deux à gauche et deux à croite.
+On cache les panneaux droit et gauche, on sélectionne les faces à l'extrémité des panneau avant et arrière, deux à gauche et deux à droite.
 
-En suivant les même étapes, on obtient le résultat sauvegardé dans le projet **Boite Taquets Fr V3 fond.FCStd**
+
 
 # Export en SVG
 Dans l'onglet Model, on sélection les *_tab, et on clique sur la dernière icône du menu spécifique de "Laser Cut Interlocking", **Export**, on choisit comme format "Flattened SVG", et on obtient le plan de découpe.
