@@ -20,7 +20,7 @@ Les dimensions sont celles de l'espace utile à l'intérieur de la boîte, les �
 Dans la vue du modèle, et de l'arbre de construction, il y a également le panneau inférieur, regroupant les valeurs numériques.
 Lorsque qu'un champ numérique fait référence à une valeur de la feuille de calcul, il faut d'abord cliquer sur ƒx pour voir la formule la définissant.
 
-Au cours du projet, il est parfois nécessaire d'alterner entre une utilsation précise de la souris pour dessiner, et le déplacement dans l'espace pour visualiser le modèle. En cliquant dans la barre de statut en bas le la fenètre de l'application, on peut changer ce mode de **CAD** mde précis, à **Gesture**, mode de navigation dans l'espace. Certaines cmmandes de dessins ne répondent pas dans un autre mode que CAD. 
+Au cours du projet, il est parfois nécessaire d'alterner entre une utilsation précise de la souris pour dessiner, et le déplacement dans l'espace pour visualiser le modèle. En cliquant dans la barre de statut en bas le la fenètre de l'application, on peut changer ce mode de : **CAD** mode précis, à : **Gesture**, mode libre de navigation dans l'espace. Certaines cmmandes de dessins ne répondent pas dans un autre mode que CAD. 
 
 Une exigence pour l'utilisation ultérieure du greffon "LC Interlocking" est que chaque panneau de la boîte soit défini comme un **corps** séparé dans l'atelier **Part Design**. On peut créer les 5 corps par avance puis les renommer au fur et à mesure. Chacun d'eux sera décrit grâce à une **esquisse**. Penser à sauvegarder à chaque étape complétée avec succès.
 
