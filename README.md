@@ -9,19 +9,20 @@ Dans FreeCAD, les activités se font dans des ateliers spécialisés, sélection
 - Part
 - Laser Cut Interlocking, qui s'installe depuis le menu Tools > Addon manager
 
-# Comment l'adapter à d'autres valeurs ?
+# Comment l'adapter à d'autres dimensions ?
 ## Les étapes à suivre
 1. Ouvrir le projet qui définit la géométrie et les panneaux, et leur disposition.
 2. Éditer la feuille de calcul et modifier les dimensions souhaitées. Le modèle se recalcule automatiquement.
 3. Préparer des copies des corps pour l'utilisation du greffon "LC Interlocking". 
 
-## Étapes en détail
+## Les étapes en détail
 1. Ouvrir **Boite Taquets Fr V3.FCStd**.
 2. Dans FreeCAD, le design est paramétré grâce à une feuille de calcul ici nommée **dimensions**
 Dans cette feuille de calcul, les cellules surlignées en jaune sont associées avec un **alias**, qui sert de référence à cette valeur, la syntaxe d'une référence est \<\<nom de la feuille de calcul\>\>.alias, par exemple \<\<dimensions\>\>.longueur.
 
 > [!NOTE]  
 > Les dimensions sont celles de l'espace utile à l'intérieur de la boîte, les épaisseurs sont comptées en plus, vers l'extérieur.
+
 > [!NOTE]
 > Dans la vue du modèle, et de l'arbre de construction, il y a également le panneau inférieur, regroupant les valeurs numériques.
 > Lorsque qu'un champ numérique fait référence à une valeur de la feuille de calcul, il faut d'abord cliquer sur ƒx pour voir la formule la définissant.
@@ -30,15 +31,19 @@ Dans cette feuille de calcul, les cellules surlignées en jaune sont associées 
 > Au cours du projet, il est parfois nécessaire d'alterner entre une utilisation précise de la souris pour dessiner, et le déplacement dans l'espace pour visualiser le modèle. En cliquant dans la barre de statut en bas le la fenètre de l'application, on peut changer ce mode, de : **CAD**, mode précis, à : **Gesture**, mode libre de navigation dans l'espace. Certaines commandes de dessins ne répondent pas dans un autre mode que CAD. 
 
 3. Une exigence pour l'utilisation ultérieure du greffon "LC Interlocking" est que chaque panneau de la boîte soit défini comme un **corps** séparé dans l'atelier **Part Design**. On ne détaillera pas les opérations de desin de la boîte. Lorsque les cinq corps sont prêts, il faut changer d'atelier pour **Part**, et une transformation supplémentaire est nécessaire pour l'utilisation du greffon : On sélectionne les cinq corps, puis dans le menu "Part", sélectionner **Part > Créer une copie > Créer une copie simple** . On peut ensuite cacher les cinq corps originaux.
-
-> [!CAUTION] 
+> [!NOTE] 
 > Il ne faut pas les supprimer de l'arbre de construction, il faut seulement changer leur visibilité.
 
 # Utilisation du greffon LC Interlocking
+## Les étapes à suivre
+1. On selectionne toutes les copies de corps créées à l'étape précédente, et on indique au greffon de les prendre en compte. Dans le même formulaire on paramètre la tolérence et la précision du Laser.
+2. On cache les copies de corps porteuses des encoches ou des mortaises, on sélectionne les toutes les faces qui vont être rallongées par les queues droites ou tenons, et on indique au greffon de les prendre en compte. Dans le même formulaire, on indique le nombre de tenons, et on désélectionne une option spécifique aux fraiseuses.
+3. On clique sur "Preview", qui change la vue pour montrer le résultat.
+4. On conclut l'opération en refermant le dialogue du greffon.
 
-
-On peut ensuite passer dans l'atelier **Laser Cut Interlocking**, dans le menu qui lui est spécifique, on clique sur la 2e icône "Slots"
-Dans cette étape, on fera de nombreux aller-retours entre l'onglet **Model**, et l'onglet **Tasks**.
+## Les étapes en détail
+1. Dans la vue modèle, on selectionne les copies des corps, leurs noms ont un suffixe en 001. On peut ensuite passer dans l'atelier **Laser Cut Interlocking**, dans le menu qui lui est spécifique, on clique sur la 2e icône "Slots"
+Dans cette étape, on fera de nombreux aller-retours entre l'onglet **Modèle**, et l'onglet **Tâches**.
 Pour définir un assemblage, il faut selectionner toutes les copies simples des corps concernés par cet assemblage. 
 
 Commençons par le fond, toutes les 5 copies sont concernées, on les sélectionne toutes.
