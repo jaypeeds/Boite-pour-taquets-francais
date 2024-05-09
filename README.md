@@ -1,5 +1,5 @@
 # Boîte pour taquets francais
-Design avec FreeCAD de boîtes à queue droite, adaptable sur des rails en CP de 18mm d'épaisseur, de 30mm à l'arrière et 48mm de hauteur à l'avant.
+Design avec FreeCAD de boîtes à queues droites, adaptables sur des rails en CP de 18mm d'épaisseur, de 30mm à l'arrière et 48mm de hauteur à l'avant.
 
 <img width="200" alt="image" src="https://github.com/TeamRepairCafeNice/Boite-pour-taquets-francais/assets/72799037/93402a38-45ab-4d43-832a-e1cead821e37">
 
